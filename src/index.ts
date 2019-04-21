@@ -45,6 +45,12 @@ async function main(): Promise<number> {
 
     for (const c of conf.r53) {
       dns.push(new DnsRoute53(c));
+
+      console.log(
+        `Set up Route 53 DNS sync for zone ${c.zone} (records: ${c.records.join(
+          ',',
+        )})`,
+      );
     }
   }
 
@@ -53,6 +59,8 @@ async function main(): Promise<number> {
 
     for (const c of conf.url) {
       dns.push(new DnsUrl(c));
+
+      console.log(`Set up URL DNS sync using update URL ${c.url}`);
     }
   }
 
