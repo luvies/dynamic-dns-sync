@@ -29,6 +29,8 @@ DYN_DNS_R53_{name}={zone},{resource}(,{resource})*
   - Each one of these is the actual A record that should be kept in sync
   - You need at least 1, but can have as many as you want
 
+You will also need to set up your AWS credentials properly so that the AWS SDK can login properly. If route 53 sync is not configured, then the AWS SDK is not loaded at all, and so you can avoid passing in credentials compeletely.
+
 ### URL-based update
 
 To configure an URL-based update, you need to use the following env var setup:
