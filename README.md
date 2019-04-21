@@ -1,4 +1,4 @@
-# Domain DNS Sync
+# Dynamic DNS Sync
 
 A service that can be run inside a network and will continously check for external IP address changes, pushing these changes to route 53 and calling URL-based updaters (such as FreeDNS).
 
