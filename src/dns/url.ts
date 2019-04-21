@@ -10,10 +10,10 @@ export class DnsUrl implements DnsBase {
       const res = await fetch(this._conf.url);
 
       if (!res.ok) {
-        console.log(`${this._conf.url} returned status ${res.status}`);
+        console.error(`${this._conf.url} returned status ${res.status}`);
       }
     } catch (err) {
-      console.log(
+      console.error(
         `Failed to connect to ${this._conf.url}, reason: ${err.message}`,
       );
     }
