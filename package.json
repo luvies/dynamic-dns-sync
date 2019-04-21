@@ -1,0 +1,25 @@
+{
+  "name": "@luvies/domain-dns-sync",
+  "version": "0.0.1",
+  "description": "Keeps route 53 & FreeDNS domains in sync with a rolling IP address",
+  "main": "dist/index.js",
+  "repository": "https://github.com/luvies/domain-dns-sync",
+  "author": "luvies",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "clean": "rm -rf dist/*"
+  },
+  "devDependencies": {
+    "@types/node": "^11.13.6",
+    "prettier": "^1.17.0",
+    "tslint": "^5.16.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-eslint-rules": "^5.4.0",
+    "typescript": "^3.4.4"
+  }
+}
