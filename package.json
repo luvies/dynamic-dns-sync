@@ -1,6 +1,6 @@
 {
   "name": "@luvies/domain-dns-sync",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Keeps route 53 & FreeDNS domains in sync with a rolling IP address",
   "main": "dist/index.js",
   "repository": "https://github.com/luvies/domain-dns-sync",
