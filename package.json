@@ -12,7 +12,9 @@
   "scripts": {
     "build": "tsc",
     "build:watch": "tsc --watch",
-    "clean": "rm -rf dist/*"
+    "clean": "rm -rf dist/*",
+    "lint": "tslint --project . && prettier --check 'src/**/*.ts'",
+    "fix": "tslint --project . --fix && prettier --check --write 'src/**/*.ts'"
   },
   "devDependencies": {
     "@types/node": "^11.13.6",

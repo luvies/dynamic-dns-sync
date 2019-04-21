@@ -6,7 +6,7 @@
   ],
   "rules": {
     "interface-name": false,
-    "semicolon": true,
+    "semicolon": [true, "always", "strict-bound-class-methods"],
     "object-literal-sort-keys": false,
     "indent": [true, "spaces", 2],
     "trailing-comma": [
@@ -31,6 +31,7 @@
     ],
     "quotemark": [true, "single"],
     "no-return-await": true,
+    "no-unnecessary-type-assertion": true,
     "await-promise": true,
     "ban-comma-operator": true,
     "no-floating-promises": true,
@@ -47,6 +48,7 @@
       "check-open-brace",
       "check-whitespace"
     ],
+    "prefer-template": true,
     "return-undefined": true,
     "no-inferrable-types": true,
     "member-access": [
@@ -60,11 +62,16 @@
     "space-before-function-paren": false,
     "object-curly-spacing": [true, "always"],
     "arrow-parens": [true, "ban-single-arg-parens"],
-    "max-classes-per-file": false,
-    "variable-name": false,
-    "unified-signatures": false,
-    "no-bitwise": false,
-    "triple-equals": false
+    "object-literal-key-quotes": false,
+    "no-namespace": false,
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-leading-underscore",
+      "allow-pascal-case",
+      "require-const-for-all-caps"
+    ]
   },
   "linterOptions": {
     "exclude": ["node_modules/**/*.ts"]
