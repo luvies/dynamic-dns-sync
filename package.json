@@ -13,6 +13,7 @@
     "build": "tsc",
     "build:watch": "tsc --watch",
     "clean": "rm -rf dist/*",
+    "test": "yarn build",
     "lint": "tslint --project . && prettier --check 'src/**/*.ts'",
     "fix": "tslint --project . --fix && prettier --check --write 'src/**/*.ts'"
   },
