@@ -18,11 +18,18 @@
     "fix": "tslint --project . --fix && prettier --check --write 'src/**/*.ts'"
   },
   "devDependencies": {
+    "@types/ms": "^0.7.30",
     "@types/node": "^11.13.6",
+    "@types/node-fetch": "^2.3.2",
     "prettier": "^1.17.0",
     "tslint": "^5.16.0",
     "tslint-config-prettier": "^1.18.0",
     "tslint-eslint-rules": "^5.4.0",
     "typescript": "^3.4.4"
+  },
+  "dependencies": {
+    "ms": "^2.1.1",
+    "node-fetch": "^2.3.0",
+    "source-map-support": "^0.5.12"
   }
 }

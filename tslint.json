@@ -5,6 +5,7 @@
     "tslint-config-prettier"
   ],
   "rules": {
+    "no-console": false,
     "interface-name": false,
     "semicolon": [true, "always", "strict-bound-class-methods"],
     "object-literal-sort-keys": false,
