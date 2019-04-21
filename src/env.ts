@@ -57,7 +57,8 @@ export function loadConfig(): DnsConfig {
         throw new EnvError(envErrorMsg);
       }
 
-      const spl = value.split(',');
+      // Split on command and filter out empty values.
+      const spl = value.split(',').filter(v => v);
       if (spl.length < 2) {
         throw new EnvError(envErrorMsg);
       }
